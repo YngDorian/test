@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>280</width>
+    <height>430</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="settingsGroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>258</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Настройки обработки</string>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="fileMaskLabel">
+       <property name="text">
+        <string>Маска файлов</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="fileMaskLineEdit">
+       <property name="text">
+        <string>*.bin</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="InputDirLabel">
+       <property name="text">
+        <string>Папка для поиска файлов</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="inputDirLineEdit">
+       <property name="text">
+        <string>C:\input</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="inputDirBrowseButton">
+       <property name="text">
+        <string>Обзор..</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="outputDirLabel">
+       <property name="text">
+        <string>Папка для сохранения результата</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="outputDirLineEdit">
+       <property name="text">
+        <string>C:\output</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="outputDirBrowseButton">
+       <property name="text">
+        <string>Обзор...</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="keyLabel">
+       <property name="text">
+        <string>Ключ (8 байт в hex)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="keyLineEdit">
+       <property name="text">
+        <string>1234567890ABCDEF</string>
+       </property>
+       <property name="maxLength">
+        <number>16</number>
+       </property>
+       <property name="frame">
+        <bool>true</bool>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::EchoMode::Normal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="deleteSourceCheckBox">
+       <property name="text">
+        <string>Удалять исходные файлы после обработки</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="conflictLabel">
+       <property name="text">
+        <string>При совпадении имени файла</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="conflictComboBox">
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pauseButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>400</y>
+      <width>80</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>pauseButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>400</y>
+      <width>80</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>startButton</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopButton">
+    <property name="geometry">
+     <rect>
+      <x>188</x>
+      <y>400</y>
+      <width>80</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>stopButton</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
